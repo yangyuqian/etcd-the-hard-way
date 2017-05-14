@@ -46,4 +46,8 @@ Perform a secured operation via `etcdctl`
 
 ```
 $ etcdctl --endpoints=https://127.0.0.1:12379,https://127.0.0.1:22379,https://127.0.0.1:32379 --cert-file=client.pem --ca-file=ca.pem --key-file=client-key.pem member list
+
+3fb0bb8f51408909: name=infra3 peerURLs=https://127.0.0.1:32380 clientURLs=https://127.0.0.1:32379 isLeader=false
+d05e7521f6de6bab: name=infra1 peerURLs=https://127.0.0.1:12380 clientURLs=https://127.0.0.1:12379 isLeader=true
+f0c6bf0f0690ad50: name=infra2 peerURLs=https://127.0.0.1:22380 clientURLs=https://127.0.0.1:22379 isLeader=false
 ```
