@@ -51,3 +51,11 @@ $ etcdctl --endpoints=https://127.0.0.1:12379,https://127.0.0.1:22379,https://12
 d05e7521f6de6bab: name=infra1 peerURLs=https://127.0.0.1:12380 clientURLs=https://127.0.0.1:12379 isLeader=true
 f0c6bf0f0690ad50: name=infra2 peerURLs=https://127.0.0.1:22380 clientURLs=https://127.0.0.1:22379 isLeader=false
 ```
+
+# Reference
+
+[Introducing CFSSL](https://blog.cloudflare.com/introducing-cfssl/)
+
+[Self-signed Certificates](https://en.wikipedia.org/wiki/Self-signed_certificate)
+
+[Public Key Architecture](https://en.wikipedia.org/wiki/Public_key_infrastructure)
