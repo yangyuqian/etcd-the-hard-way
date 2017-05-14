@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ -z "$SERVER_ADDR"]; then
+  SERVER_ADDR=$DEFAULT_ADDR
+fi
+
+if [ -z "$CLIENT_ADDR"]; then
+  CLIENT_ADDR=$DEFAULT_ADDR
+fi
+
+if [ -z "$MEMBER_ADDR"]; then
+  MEMBER_ADDR=$DEFAULT_ADDR
+fi

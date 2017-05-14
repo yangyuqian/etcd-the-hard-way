@@ -1,0 +1,9 @@
+#!/bin/sh
+
+DEFAULT_ADDR="127.0.0.1"
+
+SERVER_NAME="server"
+
+CLIENT_NAME="client"
+
+MEMBERS="infra1 infra2 infra3 $SERVER_NAME $CLIENT_NAME"
