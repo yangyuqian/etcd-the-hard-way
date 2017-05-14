@@ -32,8 +32,18 @@ Generate CA and certificates with `gen.sh`
 $ sh gen.sh
 ```
 
+`gen.sh` creates a self-signed CA, along with separated certificates for server,
+client and configured members(or peers),
+and generated certificates are signed by the self-signed CA.
+
 Start a secured etcd cluster with 3-nodes through `goreman`
 
 ```
 $ goreman start
+```
+
+Perform a secured operation via `etcdctl`
+
+```
+$ etcdctl --endpoints=https://127.0.0.1:12379,https://127.0.0.1:22379,https://127.0.0.1:32379 --cert-file=client.pem --ca-file=ca.pem --key-file=client-key.pem member list
 ```
