@@ -22,3 +22,7 @@ _testmain.go
 *.exe
 *.test
 *.prof
+*.pem
+*.csr
+*.etcd
+examples/security/ssl/*.json
